@@ -29,8 +29,9 @@ body {
   TODO: 画像がカードの幅からはみ出さないように，AIに直し方を聞いてみましょう．
 */
 .card-image {
-    width: 1200px; /* 巨大化バグの原因です */
+    max-width: 100%; /* ここを width: 1200px; から置き換えます */
     height: auto;
+    border-radius: 12px;
 }
 
 .monster-name {
